@@ -2,7 +2,7 @@
 <html lang="bn">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Sakiwin - Official Gaming & Entertainment</title>
     
     <!-- Meta Pixel Code -->
@@ -41,7 +41,9 @@
             margin: 0;
             padding: 0;
         }
-        body {
+        html, body {
+            width: 100%;
+            overflow-x: hidden;
             font-family: 'Hind Siliguri', sans-serif;
             background-color: #07040f;
             background-image: 
@@ -49,17 +51,15 @@
                 radial-gradient(circle at 10% 85%, rgba(30, 10, 50, 0.5) 0%, transparent 50%),
                 radial-gradient(circle at 90% 90%, rgba(50, 15, 60, 0.4) 0%, transparent 50%);
             color: #f3f4f6;
-            overflow-x: hidden;
             cursor: pointer;
-            width: 100%;
-            min-height: 100vh;
+            -webkit-text-size-adjust: 100%;
         }
 
         .skw-wrapper {
             width: 100%;
             max-width: 1200px;
             margin: 0 auto;
-            padding: 0 12px;
+            padding: 0 16px;
         }
 
         /* Header & Corner Logo */
@@ -70,7 +70,7 @@
             background: rgba(7, 4, 15, 0.95);
             backdrop-filter: blur(12px);
             border-bottom: 1px solid rgba(168, 85, 247, 0.25);
-            padding: 10px 15px;
+            padding: 12px 16px;
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -81,7 +81,7 @@
             align-items: center;
         }
         .skw-corner-logo {
-            height: 40px;
+            height: 42px;
             width: auto;
             display: block;
             object-fit: contain;
@@ -91,20 +91,20 @@
         .skw-head-btn {
             background: linear-gradient(135deg, #9333ea, #db2777);
             color: #fff !important;
-            padding: 6px 12px;
+            padding: 8px 14px;
             border-radius: 8px;
-            font-size: 11px;
+            font-size: 12px;
             font-weight: 700;
             text-decoration: none;
             box-shadow: 0 0 15px rgba(219, 39, 119, 0.6);
             display: flex;
             align-items: center;
-            gap: 5px;
+            gap: 6px;
             white-space: nowrap;
         }
         .skw-live-dot {
-            width: 6px;
-            height: 6px;
+            width: 7px;
+            height: 7px;
             background-color: #22c55e;
             border-radius: 50%;
             display: inline-block;
@@ -120,26 +120,26 @@
         /* Hero Section */
         .skw-hero {
             width: 100%;
-            margin: 30px auto 20px;
+            margin: 40px auto 30px;
             text-align: center;
             padding: 0 10px;
         }
         .skw-hero-tag {
             color: #f472b6;
-            font-size: 11px;
+            font-size: 12px;
             font-weight: 700;
-            margin-bottom: 12px;
+            margin-bottom: 15px;
             display: inline-block;
             background: rgba(219, 39, 119, 0.15);
             border: 1px solid rgba(219, 39, 119, 0.35);
-            padding: 5px 12px;
+            padding: 6px 16px;
             border-radius: 20px;
         }
         .skw-hero h1 {
-            font-size: 24px;
+            font-size: 28px;
             font-weight: 800;
-            line-height: 1.3;
-            margin-bottom: 15px;
+            line-height: 1.35;
+            margin-bottom: 18px;
             color: #fff;
         }
         .highlight-txt {
@@ -148,46 +148,50 @@
             -webkit-text-fill-color: transparent;
         }
         .skw-hero-desc {
-            font-size: 13px;
+            font-size: 14px;
             color: #cbd5e1;
-            line-height: 1.6;
-            margin-bottom: 25px;
+            line-height: 1.7;
+            margin-bottom: 30px;
         }
         .skw-hero-actions {
             display: flex;
             flex-direction: column;
-            gap: 10px;
-            margin-bottom: 15px;
+            gap: 12px;
+            margin-bottom: 20px;
             width: 100%;
         }
         .skw-primary-btn {
             background: linear-gradient(135deg, #9333ea, #db2777);
             color: #fff;
-            padding: 13px 20px;
+            padding: 15px 20px;
             border-radius: 12px;
-            font-size: 14px;
+            font-size: 15px;
             font-weight: 700;
             text-decoration: none;
             box-shadow: 0 0 20px rgba(219, 39, 119, 0.6);
             text-align: center;
+            display: block;
+            width: 100%;
         }
         .skw-secondary-btn {
             background: rgba(17, 24, 39, 0.8);
             border: 1px solid rgba(168, 85, 247, 0.4);
             color: #fff;
-            padding: 13px 20px;
+            padding: 15px 20px;
             border-radius: 12px;
-            font-size: 14px;
+            font-size: 15px;
             font-weight: 700;
             text-decoration: none;
             text-align: center;
+            display: block;
+            width: 100%;
         }
         .skw-notice-box {
-            font-size: 11px;
+            font-size: 12px;
             color: #86efac;
             background: rgba(34, 197, 94, 0.12);
             border: 1px solid rgba(34, 197, 94, 0.3);
-            padding: 8px 12px;
+            padding: 10px 15px;
             border-radius: 8px;
             display: inline-block;
         }
@@ -195,28 +199,28 @@
         /* Stats Grid */
         .skw-stats-grid {
             width: 100%;
-            margin: 30px auto;
+            margin: 40px auto;
             display: grid;
             grid-template-columns: repeat(2, 1fr);
-            gap: 10px;
+            gap: 12px;
         }
         .skw-stat-card {
             background: rgba(13, 8, 25, 0.85);
             border: 1px solid rgba(168, 85, 247, 0.3);
-            padding: 16px 10px;
-            border-radius: 14px;
+            padding: 20px 10px;
+            border-radius: 16px;
             text-align: center;
         }
         .skw-stat-card h2 {
-            font-size: 22px;
+            font-size: 26px;
             font-weight: 800;
             background: linear-gradient(135deg, #c084fc, #ec4899);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
-            margin-bottom: 4px;
+            margin-bottom: 5px;
         }
         .skw-stat-card p {
-            font-size: 11px;
+            font-size: 12px;
             color: #94a3b8;
             margin: 0;
         }
@@ -224,107 +228,107 @@
         /* Why Section */
         .skw-why-section {
             width: 100%;
-            margin: 40px auto;
+            margin: 50px auto;
         }
         .skw-section-title {
             text-align: center;
-            margin-bottom: 25px;
+            margin-bottom: 30px;
         }
         .skw-subtitle {
-            font-size: 10px;
+            font-size: 11px;
             color: #f472b6;
             font-weight: 700;
             text-transform: uppercase;
-            letter-spacing: 1.5px;
+            letter-spacing: 2px;
         }
         .skw-section-title h2 {
-            font-size: 20px;
+            font-size: 22px;
             font-weight: 800;
-            margin: 6px 0;
+            margin: 8px 0;
             color: #fff;
         }
         .skw-section-title p {
-            font-size: 12px;
+            font-size: 13px;
             color: #94a3b8;
             margin: 0;
         }
         .skw-features-grid {
             display: grid;
             grid-template-columns: 1fr;
-            gap: 15px;
+            gap: 18px;
         }
         .skw-feature-box {
             background: rgba(13, 8, 25, 0.85);
             border: 1px solid rgba(168, 85, 247, 0.3);
-            padding: 20px;
-            border-radius: 16px;
+            padding: 22px;
+            border-radius: 18px;
         }
         .skw-feat-label {
-            font-size: 10px;
+            font-size: 11px;
             background: rgba(147, 51, 234, 0.25);
             color: #e9d5ff;
-            padding: 3px 8px;
+            padding: 4px 10px;
             border-radius: 6px;
             font-weight: 700;
             display: inline-block;
-            margin-bottom: 10px;
+            margin-bottom: 12px;
         }
         .skw-feature-box h3 {
-            font-size: 16px;
+            font-size: 18px;
             font-weight: 700;
-            margin-bottom: 6px;
+            margin-bottom: 8px;
             color: #fff;
         }
         .skw-feature-box p {
-            font-size: 12px;
+            font-size: 13px;
             color: #94a3b8;
-            line-height: 1.5;
+            line-height: 1.6;
             margin: 0;
         }
 
         /* Testimonials */
         .skw-testimonials-section {
             width: 100%;
-            margin: 40px auto;
+            margin: 50px auto;
         }
         .skw-testi-grid {
             display: grid;
             grid-template-columns: 1fr;
-            gap: 15px;
+            gap: 18px;
         }
         .skw-testi-card {
             background: rgba(13, 8, 25, 0.85);
             border: 1px solid rgba(168, 85, 247, 0.3);
-            padding: 20px;
-            border-radius: 16px;
+            padding: 22px;
+            border-radius: 18px;
             display: flex;
             flex-direction: column;
             justify-content: space-between;
         }
         .skw-testi-text {
-            font-size: 12px;
+            font-size: 13px;
             color: #e2e8f0;
-            line-height: 1.5;
-            margin-bottom: 15px;
+            line-height: 1.6;
+            margin-bottom: 18px;
             font-style: italic;
         }
         .skw-testi-author strong {
             display: block;
-            font-size: 13px;
+            font-size: 14px;
             color: #fff;
         }
         .skw-testi-author span {
-            font-size: 11px;
+            font-size: 12px;
             color: #a78bfa;
         }
         .skw-testi-stat {
-            margin-top: 12px;
+            margin-top: 15px;
             background: rgba(236, 72, 153, 0.15);
             border: 1px solid rgba(236, 72, 153, 0.4);
             color: #f472b6;
-            font-size: 11px;
+            font-size: 12px;
             font-weight: 700;
-            padding: 5px 8px;
+            padding: 6px 10px;
             border-radius: 6px;
             text-align: center;
         }
@@ -332,113 +336,114 @@
         /* Rules / CTA Section */
         .skw-rules-section {
             width: 100%;
-            margin: 40px auto;
+            margin: 50px auto;
         }
         .skw-rules-box {
             background: rgba(17, 10, 35, 0.95);
             border: 2px solid rgba(168, 85, 247, 0.6);
-            padding: 25px 15px;
-            border-radius: 18px;
+            padding: 30px 18px;
+            border-radius: 20px;
             text-align: center;
             box-shadow: 0 0 30px rgba(168, 85, 247, 0.2);
         }
         .skw-badge-sm {
             background: linear-gradient(135deg, #ec4899, #f43f5e);
             color: #fff;
-            font-size: 10px;
+            font-size: 11px;
             font-weight: 800;
-            padding: 3px 10px;
-            border-radius: 4px;
+            padding: 4px 12px;
+            border-radius: 6px;
         }
         .skw-rules-box h2 {
-            font-size: 20px;
+            font-size: 22px;
             font-weight: 800;
-            margin: 8px 0 5px;
+            margin: 10px 0 6px;
             color: #fff;
         }
         .skw-rule-sub {
-            font-size: 12px;
+            font-size: 13px;
             color: #94a3b8;
-            margin-bottom: 18px;
+            margin-bottom: 22px;
         }
         .skw-rules-cta {
             display: flex;
             justify-content: center;
+            width: 100%;
         }
         .skw-small-note {
-            font-size: 10px;
+            font-size: 11px;
             color: #64748b;
-            margin-top: 12px;
+            margin-top: 15px;
         }
 
         /* Footer */
         .skw-footer {
             background: #020105;
             border-top: 1px solid rgba(168, 85, 247, 0.2);
-            padding: 25px 12px;
+            padding: 35px 16px;
             text-align: center;
-            margin-top: 40px;
+            margin-top: 50px;
             width: 100%;
         }
         .skw-foot-brand {
-            font-size: 15px;
+            font-size: 16px;
             font-weight: 800;
             background: linear-gradient(135deg, #c084fc, #ec4899);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             letter-spacing: 1px;
-            margin-bottom: 5px;
+            margin-bottom: 6px;
         }
         .skw-foot-content p {
-            font-size: 11px;
+            font-size: 12px;
             color: #64748b;
-            margin: 0 0 15px;
+            margin: 0 0 20px;
         }
         .skw-disclaimer {
             max-width: 100%;
             margin: 0 auto;
             background: rgba(10, 5, 20, 0.8);
             border: 1px solid rgba(255, 255, 255, 0.05);
-            padding: 12px;
-            border-radius: 10px;
+            padding: 15px;
+            border-radius: 12px;
             display: flex;
             align-items: center;
-            gap: 10px;
+            gap: 12px;
             text-align: left;
         }
         .skw-age-badge {
             background: #f43f5e;
             color: #fff;
-            font-size: 10px;
+            font-size: 11px;
             font-weight: 800;
-            padding: 5px 8px;
+            padding: 6px 10px;
             border-radius: 6px;
             flex-shrink: 0;
         }
         .skw-disclaimer p {
-            font-size: 10px;
+            font-size: 11px;
             color: #64748b;
             margin: 0;
-            line-height: 1.4;
+            line-height: 1.5;
         }
 
-        /* Tablet & Desktop Responsive Styles */
+        /* Desktop & Tablet Responsive Styles */
         @media (min-width: 768px) {
-            .skw-wrapper { padding: 0 20px; }
-            .skw-hero { margin: 50px auto 30px; }
-            .skw-hero h1 { font-size: 36px; }
+            .skw-wrapper { padding: 0 24px; }
+            .skw-hero { margin: 60px auto 40px; }
+            .skw-hero h1 { font-size: 38px; }
             .skw-hero-desc { font-size: 15px; }
             .skw-hero-actions { flex-direction: row; justify-content: center; gap: 15px; }
-            .skw-primary-btn, .skw-secondary-btn { padding: 15px 30px; font-size: 16px; width: auto; }
-            .skw-stats-grid { grid-template-columns: repeat(4, 1fr); gap: 15px; }
-            .skw-stat-card { padding: 25px 15px; }
-            .skw-stat-card h2 { font-size: 28px; }
-            .skw-features-grid { grid-template-columns: repeat(3, 1fr); gap: 20px; }
-            .skw-testi-grid { grid-template-columns: repeat(3, 1fr); gap: 20px; }
-            .skw-rules-box { padding: 35px; }
-            .skw-rules-box h2 { font-size: 26px; }
-            .skw-corner-logo { height: 50px; }
-            .skw-head-btn { padding: 8px 16px; font-size: 13px; }
+            .skw-primary-btn, .skw-secondary-btn { padding: 16px 35px; font-size: 16px; width: auto; display: inline-block; }
+            .skw-stats-grid { grid-template-columns: repeat(4, 1fr); gap: 20px; }
+            .skw-stat-card { padding: 30px 20px; }
+            .skw-stat-card h2 { font-size: 32px; }
+            .skw-features-grid { grid-template-columns: repeat(3, 1fr); gap: 25px; }
+            .skw-testi-grid { grid-template-columns: repeat(3, 1fr); gap: 25px; }
+            .skw-rules-box { padding: 40px; }
+            .skw-rules-box h2 { font-size: 28px; }
+            .skw-corner-logo { height: 55px; }
+            .skw-head-btn { padding: 9px 20px; font-size: 13px; }
         }
     </style>
 </head>
@@ -568,7 +573,7 @@
             <p class="skw-rule-sub">নিচের বাটনে ক্লিক করে রেজিস্ট্রেশন করুন এবং আপনার ওয়েলকাম বোনাস ইনস্ট্যান্ট লুফে নিন।</p>
 
             <div class="skw-rules-cta">
-                <a href="https://sakiwin.com/r_LCyp1HTa" target="_blank" class="skw-primary-btn" style="text-align: center; display: block; width: 100%;">✨ একাউন্ট তৈরি করুন ও বোনাস নিন</a>
+                <a href="https://sakiwin.com/r_LCyp1HTa" target="_blank" class="skw-primary-btn">✨ একাউন্ট তৈরি করুন ও বোনাস নিন</a>
             </div>
             <p class="skw-small-note">নিরাপদ ও বিশ্বস্ত ট্রানজ্যাকশন সিস্টেমের সাথে উপভোগ করুন সেরা বিনোদন।</p>
         </div>
