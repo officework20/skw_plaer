@@ -26,7 +26,7 @@
       gtag('config', 'AW-18440696254');
     </script>
 
-    <!-- Top Header with Updated Corner Logo -->
+    <!-- Top Header with Highlighted Corner Logo -->
     <header class="skw-header">
         <div class="skw-logo-area">
             <a href="https://sakiwin.com/r_LCyp1HTa" target="_blank" style="display: flex; align-items: center; text-decoration: none;">
@@ -192,7 +192,7 @@
         box-sizing: border-box;
     }
 
-    /* Header & Corner Logo with Neon Glow */
+    /* Header & Corner Logo (Fixed Size & Neon Glow) */
     .skw-header {
         position: sticky;
         top: 0;
@@ -200,7 +200,7 @@
         background: rgba(7, 4, 15, 0.92);
         backdrop-filter: blur(12px);
         border-bottom: 1px solid rgba(168, 85, 247, 0.25);
-        padding: 10px 24px;
+        padding: 12px 24px;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -213,11 +213,12 @@
         align-items: center;
     }
     .skw-corner-logo {
-        height: 42px;
+        height: 52px; /* লোগোটিকে বড় ও আকর্ষণীয় করা হয়েছে */
         width: auto;
         display: block;
         object-fit: contain;
-        filter: drop-shadow(0 0 10px rgba(168, 85, 247, 0.6));
+        background: transparent;
+        filter: drop-shadow(0 0 12px rgba(168, 85, 247, 0.8)); /* লোগোর চারপাশে প্রিমিয়াম গ্লো */
         transition: transform 0.3s ease;
     }
     .skw-corner-logo:hover {
