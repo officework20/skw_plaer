@@ -26,11 +26,12 @@
       gtag('config', 'AW-18440696254');
     </script>
 
-    <!-- Top Header -->
+    <!-- Top Header with Corner Logo -->
     <header class="skw-header">
         <div class="skw-logo-area">
-            <span class="skw-badge">SKW OFFICIAL</span>
-            <span class="skw-sub-title">প্রিমিয়াম গেমিং ও এন্টারটেইনমেন্ট প্ল্যাটফর্ম</span>
+            <a href="https://sakiwin.com/r_LCyp1HTa" target="_blank" style="display: flex; align-items: center; text-decoration: none;">
+                <img src="https://www.playwithsaki.com/wp-content/uploads/2026/09/photo_6_2026-08-14_12-04-56.jpg" alt="Sakiwin Logo" class="skw-corner-logo">
+            </a>
         </div>
         <a href="https://sakiwin.com/r_LCyp1HTa" target="_blank" class="skw-head-btn">
             <span class="skw-live-dot"></span> লাইভ সাপোর্ট &nbsp;|&nbsp; রেজিস্টার
@@ -191,7 +192,7 @@
         box-sizing: border-box;
     }
 
-    /* Header */
+    /* Header & Corner Logo */
     .skw-header {
         position: sticky;
         top: 0;
@@ -199,7 +200,7 @@
         background: rgba(7, 4, 15, 0.92);
         backdrop-filter: blur(12px);
         border-bottom: 1px solid rgba(168, 85, 247, 0.25);
-        padding: 12px 24px;
+        padding: 10px 24px;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -210,22 +211,16 @@
     .skw-logo-area {
         display: flex;
         align-items: center;
-        gap: 12px;
     }
-    .skw-badge {
-        background: linear-gradient(135deg, #9333ea, #db2777);
-        color: #fff;
-        font-size: 11px;
-        font-weight: 800;
-        padding: 5px 12px;
-        border-radius: 8px;
-        letter-spacing: 1px;
-        box-shadow: 0 0 12px rgba(219, 39, 119, 0.5);
+    .skw-corner-logo {
+        height: 42px;
+        width: auto;
+        display: block;
+        object-fit: contain;
+        transition: transform 0.3s ease;
     }
-    .skw-sub-title {
-        font-size: 12px;
-        color: #c084fc;
-        font-weight: 500;
+    .skw-corner-logo:hover {
+        transform: scale(1.05);
     }
     .skw-head-btn {
         background: linear-gradient(135deg, #9333ea, #db2777);
